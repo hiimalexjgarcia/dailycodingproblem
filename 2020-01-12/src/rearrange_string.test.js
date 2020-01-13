@@ -1,3 +1,10 @@
+const rearrange_string = require('./rearrange_string');
+
+test('given string "yyz", return "yzy"', () => {
+  expect(rearrange_string("yyz")).toBe("yzy");
+});
+
+/*
 Sun, Jan 12, 2020 at 10:33 AM
 
 Daily Coding Problem
@@ -8,3 +15,4 @@ Given a string s , rearrange the characters so that any two adjacent
 characters are not the same. If this is not possible, return null.
 For example, if s = yyz then return yzy . If s = yyy then
 return null.
+*/
