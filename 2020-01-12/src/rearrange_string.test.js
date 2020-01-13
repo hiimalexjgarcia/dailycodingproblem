@@ -21,7 +21,6 @@ test('given string "zzvvvvvvzxcvoiwls", return "zvzvzvxvcvovivwls"', () => {
   expect(rearrangeString('zzvvvvvvzxcvoiwls')).toBe('zvzvzvxvcvovivwls')
 })
 
-
 /*
 Sun, Jan 12, 2020 at 10:33 AM
 
