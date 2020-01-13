@@ -1,12 +1,13 @@
-const rearrange_string = require('./rearrange_string');
+/* eslint-env jest */
+const rearrangeString = require('./rearrange_string')
 
 test('given string "yyz", return "yzy"', () => {
-  expect(rearrange_string("yyz")).toBe("yzy");
-});
+  expect(rearrangeString('yyz')).toBe('yzy')
+})
 
 test('given string "yyy", return null', () => {
-  expect(rearrange_string("yyz")).toBe(null);
-});
+  expect(rearrangeString('yyy')).toBe(null)
+})
 
 /*
 Sun, Jan 12, 2020 at 10:33 AM
