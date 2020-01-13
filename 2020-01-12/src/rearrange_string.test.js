@@ -4,6 +4,10 @@ test('given string "yyz", return "yzy"', () => {
   expect(rearrange_string("yyz")).toBe("yzy");
 });
 
+test('given string "yyy", return null', () => {
+  expect(rearrange_string("yyz")).toBe(null);
+});
+
 /*
 Sun, Jan 12, 2020 at 10:33 AM
 
