@@ -9,6 +9,19 @@ test('given string "yyy", return null', () => {
   expect(rearrangeString('yyy')).toBe(null)
 })
 
+test('given string "y", return "y"', () => {
+  expect(rearrangeString('y')).toBe('y')
+})
+
+test('given string "", return ""', () => {
+  expect(rearrangeString('')).toBe('')
+})
+
+test('given string "zzvvvvvvzxcvoiwls", return "zvzvzvxvcvovivwls"', () => {
+  expect(rearrangeString('zzvvvvvvzxcvoiwls')).toBe('zvzvzvxvcvovivwls')
+})
+
+
 /*
 Sun, Jan 12, 2020 at 10:33 AM
 
