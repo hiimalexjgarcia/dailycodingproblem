@@ -20,5 +20,6 @@ Implement a quack using three stacks and O(1) additional memory, so that the amo
 const Quack = require('./quack')
 
 test('instantiate a Quack', () => {
-  expect(new Quack()).toBeInstanceOf(Quack)
+  const myQuack = new Quack()
+  expect(myQuack).toBeInstanceOf(Quack)
 })
