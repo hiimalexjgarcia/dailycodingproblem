@@ -28,4 +28,10 @@
 #
 
 def merge_iterator(foo, bar):
-    return iter([3, 5, 8, 9, 10, 15])
+    result = []
+    for num in foo:
+        result.append(num)
+    for num in bar:
+        result.append(num)
+    result.sort()
+    return iter(result)
