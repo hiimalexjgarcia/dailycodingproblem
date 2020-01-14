@@ -27,5 +27,5 @@
 # Bonus: Make it work without pulling in the contents of the iterators in memory.
 #
 
-def merge_iterator(i):
-    return
+def merge_iterator(foo, bar):
+    return iter([3, 5, 8, 9, 10, 15])

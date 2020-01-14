@@ -35,5 +35,17 @@ class TestDcp367(unittest.TestCase):
     def test_merge_iterator_exists(self):
         self.assertEqual('merge_iterator' in dir(dcp367), True)
 
+    def test_merge_iterator_basic(self):
+        foo = iter([5, 10, 15])
+        bar = iter([3, 8, 9])
+        merge_iterator = dcp367.merge_iterator
+        mi = merge_iterator(foo, bar)
+        self.assertEqual(next(mi), 3)
+        self.assertEqual(next(mi), 5)
+        self.assertEqual(next(mi), 8)
+        self.assertEqual(next(mi), 9)
+        self.assertEqual(next(mi), 10)
+        self.assertEqual(next(mi), 15)
+
 if __name__ == '__main__':
     unittest.main()
