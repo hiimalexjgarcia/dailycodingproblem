@@ -46,6 +46,22 @@ class TestDcp367(unittest.TestCase):
         self.assertEqual(next(mi), 9)
         self.assertEqual(next(mi), 10)
         self.assertEqual(next(mi), 15)
+        self.assertRaises(StopIteration, next, mi)
+
+    def test_merge_iterator_custom(self):
+        foo = iter([1, 2, 4])
+        bar = iter([3, 4, 5, 9, 20])
+        merge_iterator = dcp367.merge_iterator
+        mi = merge_iterator(foo, bar)
+        self.assertEqual(next(mi), 1)
+        self.assertEqual(next(mi), 2)
+        self.assertEqual(next(mi), 3)
+        self.assertEqual(next(mi), 4)
+        self.assertEqual(next(mi), 4)
+        self.assertEqual(next(mi), 5)
+        self.assertEqual(next(mi), 9)
+        self.assertEqual(next(mi), 20)
+        self.assertRaises(StopIteration, next, mi)
 
 if __name__ == '__main__':
     unittest.main()
