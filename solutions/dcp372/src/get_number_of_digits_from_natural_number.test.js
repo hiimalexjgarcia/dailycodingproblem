@@ -21,3 +21,7 @@ test('given number 234, return 3', () => {
 test('given number 4234, return 4', () => {
   expect(getNumberOfDigitsFromNaturalNumber(4234)).toBe(4)
 })
+
+test('given number 524234, return 4', () => {
+  expect(getNumberOfDigitsFromNaturalNumber(524234)).toBe(6)
+})
