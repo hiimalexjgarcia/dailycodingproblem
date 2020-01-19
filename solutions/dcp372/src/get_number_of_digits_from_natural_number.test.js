@@ -17,3 +17,7 @@ const getNumberOfDigitsFromNaturalNumber = require('./get_number_of_digits_from_
 test('given number 234, return 3', () => {
   expect(getNumberOfDigitsFromNaturalNumber(234)).toBe(3)
 })
+
+test('given number 4234, return 4', () => {
+  expect(getNumberOfDigitsFromNaturalNumber(4234)).toBe(4)
+})

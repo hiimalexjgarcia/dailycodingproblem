@@ -11,7 +11,7 @@
 */
 
 function getNumberOfDigitsFromNaturalNumber (number) {
-  return 3
+  return number.toString().length
 }
 
 module.exports = getNumberOfDigitsFromNaturalNumber
