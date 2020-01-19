@@ -15,6 +15,5 @@ Constraint: don't use any loops.
 const getNumberOfDigitsFromNaturalNumber = require('./get_number_of_digits_from_natural_number')
 
 test('given number 234, return 3', () => {
-  expect(getNumberOfDigitsFromNatualNumber(234)).toBe(3)
+  expect(getNumberOfDigitsFromNaturalNumber(234)).toBe(3)
 })
-
