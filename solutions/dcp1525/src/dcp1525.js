@@ -1,4 +1,5 @@
 function isValidUTF8 (thebytes) {
+
     return true;
 }
   
