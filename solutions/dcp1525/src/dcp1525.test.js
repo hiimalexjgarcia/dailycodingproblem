@@ -33,3 +33,19 @@ test('isValidUTF8([226, 130, 172]) returns true', () => {
 test('isValidUTF8([223]) returns false', () => {
   expect( isValidUTF8([223]) ).toBe( false )
 })
+
+test('isValidUTF8([127]) returns true', () => {
+  expect( isValidUTF8([127]) ).toBe( true )
+})
+
+test('isValidUTF8([]) throws exception', () => {
+  expect( () => isValidUTF8([]) ).toThrow( Error )
+})
+
+test('isValidUTF8([223, 23, 523, 12, 5]) throws exception', () => {
+  expect( () => isValidUTF8([223, 23, 523, 12, 5]) ).toThrow ( Error )
+})
+
+test('isValidUTF8([255, 128, 138, 148, 158, 168, 178, 188]) throws exception', () => {
+  expect( () => isValidUTF8([255, 128, 138, 148, 158, 168, 178, 188]) ).toThrow( Error )
+})
