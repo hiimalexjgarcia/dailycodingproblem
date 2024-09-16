@@ -21,3 +21,19 @@ test('findNthPerfect(1) returns 19', () => {
 test('findNthPerfect(2) returns 28', () => {
   expect( findNthPerfect( 2 ) ).toBe( 28 )
 })
+
+test('findNthPerfect(9) returns 91', () => {
+  expect( findNthPerfect( 9 ) ).toBe( 91 )
+})
+
+test('findNthPerfect(10) returns 109', () => {
+  expect( findNthPerfect( 10 ) ).toBe( 109 )
+})
+
+test('findNthPerfect(19) returns 190', () => {
+  expect( findNthPerfect( 19 ) ).toBe( 190 )
+})
+
+test('findNthPerfect(20) returns 208', () => {
+  expect( findNthPerfect( 20 ) ).toBe( 208 )
+})
